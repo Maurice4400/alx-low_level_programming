@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 /**
  * print_to_98 -prints all natural nums n to 98
@@ -5,7 +6,7 @@
  * @n: int val
  * Return: n to 98
  */
-int print_to_98(int n)
+void print_to_98(int n)
 {
 	if (n <= 98)
 	{
