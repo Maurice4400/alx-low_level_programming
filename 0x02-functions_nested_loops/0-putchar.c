@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "main.h"
+<<<<<<< HEAD
 /**
  * main -Entry point
  *
@@ -7,6 +8,9 @@
  *
  */
 int main(void)
+=======
+int main (void)
+>>>>>>> 97ddb4899bd014da08f6964472f4a63079c5189c
 {
 	_putchar('_');
 	_putchar('p');
