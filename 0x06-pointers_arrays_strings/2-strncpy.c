@@ -2,20 +2,20 @@
 #include <stdio.h>
 
 /**
- * _strncpy - Entry point
+ * _strncpy - a function that copies a string
  * @dest: copy to
  * @src: copy from
- * @n: input number of char
- * Return: Always 0 (Success)
+ * @n: we copy by
+ * Return: char
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	int i;
+	int i = 0;
+	char *begin = dest;
 
-	for (i = 0; src[i] != '\0'; i++)
-		if (i < n)
-			dest[i] = src[i];
-	while (i < n)
-		dest[i++] = '\0';
+	for (; i < n && src[i] != '\0'; i++)
+		dest[i] = src[i];
+	for (; i < n; i++)
+		dest[i] = '\0';
 	return (begin);
 }
